@@ -1,47 +1,16 @@
 import pandas as pd
-import unicodedata
-import re
+import codecs
 
-# 1. Cargar datos
-RUTA_ARCHIVO='data/personas.csv'
-datos = pd.read_csv(RUTA_ARCHIVO)  
+datos = pd.read_csv('data/personas.csv')
+def decifrar_nombre(nombre_cifrado):
+    return codecs.encode(nombre_cifrado, 'rot13')
 
-# 2. Función de limpieza
-def limpiar_nombre(nombre):
-    if pd.isna(nombre):
-        return None
-    
-    # Convertir a string y quitar espacios al inicio/final
-    nombre = str(nombre).strip()
-    
-    # Convertir a minúsculas
-    nombre = nombre.lower()
-    
-    # Eliminar tildes y caracteres especiales
-    nombre = unicodedata.normalize('NFKD', nombre)
-    nombre = nombre.encode('ascii', 'ignore').decode('utf-8')
-    
-    # Eliminar números
-    nombre = re.sub(r'\d+', '', nombre)
-    
-    # Eliminar caracteres especiales (solo letras y espacios)
-    nombre = re.sub(r'[^a-z\s]', '', nombre)
-    
-    # Eliminar espacios múltiples
-    nombre = re.sub(r'\s+', ' ', nombre).strip()
-    
-    return nombre if nombre else None
+datos['nombre'] = datos ['nombre_cifrado'].apply(decifrar_nombre)
 
-# 3. Aplicar limpieza a la columna de nombres
-datos['nombre_limpio'] = datos['nombre'].apply(limpiar_nombre)
+Frecuencias = datos['nombre'].value_counts()
 
-# 4. Eliminar valores nulos
-datos_limpio = datos.dropna(subset=['nombre_limpio'])
+nombre_frecuente = Frecuencias.idxmax()
+Numero_de_veces = Frecuencias.max()
 
-# 5. Encontrar el nombre más frecuente
-nombre_frecuente = datos_limpio['nombre_limpio'].value_counts()
-nombre_top = nombre_frecuente.index[0]
-cantidad_top = nombre_frecuente.iloc[0]
-
-print(f"Nombre más frecuente: {nombre_top.title()}")
-print(f"Veces que aparece: {cantidad_top}")
+print ("El nombre mas frecuente es:", nombre_frecuente)
+print ("Aparece:",Numero_de_veces, "veces")

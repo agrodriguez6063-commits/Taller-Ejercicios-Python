@@ -126,19 +126,19 @@ A continuación se listan los 30 ejercicios. **Debe escribir el valor exacto de 
 | 01 | ¿Cuántas filas tienen el campo `id` con caracteres no numéricos? | `83648` |
 | 02 | ¿Cuántas veces aparece el nombre "Maria" en el dataset? | `4160` |
 | 03 | ¿Cuántas veces aparece el nombre "Juan" en el dataset? | `3986` |
-| 04 | ¿Cuál es el nombre más frecuente y cuántas veces aparece? | `PENDIENTE` |
-| 05 | ¿Cuál es el apellido más frecuente y cuántas veces aparece? | `PENDIENTE` |
-| 06 | ¿Cuántos registros tienen la ciudad "Bogota" después de limpiar? | `PENDIENTE` |
-| 07 | ¿Cuántos registros tienen la ciudad "Medellin" después de limpiar? | `PENDIENTE` |
-| 08 | ¿Cuántas ciudades únicas existen después de normalizar? | `PENDIENTE` |
-| 09 | ¿Cuántos registros tienen la profesión "Ingeniero" después de limpiar? | `PENDIENTE` |
-| 10 | ¿Cuántos registros tienen la profesión "Programador" después de limpiar? | `PENDIENTE` |
-| 11 | ¿Cuántas profesiones únicas existen después de normalizar? | `PENDIENTE` |
-| 12 | ¿Cuántos registros tienen el campo `email` con espacios adicionales? | `PENDIENTE` |
-| 13 | ¿Cuántos registros tienen el campo `salario` con caracteres no numéricos? | `PENDIENTE` |
-| 14 | ¿Cuál es el salario promedio después de limpiar? | `PENDIENTE` |
-| 15 | ¿Cuál es el salario máximo después de limpiar? | `PENDIENTE` |
-| 16 | ¿Cuál es el salario mínimo después de limpiar? | `PENDIENTE` |
+| 04 | ¿Cuál es el nombre más frecuente y cuántas veces aparece? | `Gonzalo aparece 4221 veces` |
+| 05 | ¿Cuál es el apellido más frecuente y cuántas veces aparece? | `Reyes aparece 7490` |
+| 06 | ¿Cuántos registros tienen la ciudad "Bogota" después de limpiar? | `14739` |
+| 07 | ¿Cuántos registros tienen la ciudad "Medellin" después de limpiar? | `14989` |
+| 08 | ¿Cuántas ciudades únicas existen después de normalizar? | `40` |
+| 09 | ¿Cuántos registros tienen la profesión "Ingeniero" después de limpiar? | `11899` |
+| 10 | ¿Cuántos registros tienen la profesión "Programador" después de limpiar? | `11875` |
+| 11 | ¿Cuántas profesiones únicas existen después de normalizar? | `44` |
+| 12 | ¿Cuántos registros tienen el campo `email` con espacios adicionales? | `45447` |
+| 13 | ¿Cuántos registros tienen el campo `salario` con caracteres no numéricos? | `85266` |
+| 14 | ¿Cuál es el salario promedio después de limpiar? | `7,659,644.90` |
+| 15 | ¿Cuál es el salario máximo después de limpiar? | `14,999,995` |
+| 16 | ¿Cuál es el salario mínimo después de limpiar? | `1,000,032` |
 | 17 | ¿Cuántos registros tienen `activo` como verdadero después de normalizar? | `PENDIENTE` |
 | 18 | ¿Cuántos registros tienen `activo` como falso después de normalizar? | `PENDIENTE` |
 | 19 | ¿Cuántos registros tienen fecha de nacimiento con formato diferente a YYYY-MM-DD? | `PENDIENTE` |
